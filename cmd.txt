@@ -1,0 +1,23 @@
+\\ cmd //
+virtualenv myenv
+code .
+
+\\ VS terminal //
+myenv/Scripts/activate
+
+\\ remove the errors //
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+\\ again //
+myenv/Scripts/activate
+
+pip install Django
+
+pip list 
+
+\\ text file //
+pip freeze > requirements.txt
+
+cd .\demoproject\ 
+
+py .\manage.py runserver 
