@@ -1,0 +1,124 @@
+Microsoft Windows [Version 10.0.19043.1110]
+(c) Microsoft Corporation. All rights reserved.
+
+E:\DjangoWorks>virtualenv env
+created virtual environment CPython3.9.5.final.0-64 in 9675ms
+  creator CPython3Windows(dest=E:\DjangoWorks\env, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\gulshan\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==21.2.2, setuptools==57.4.0, wheel==0.36.2
+  activators BashActivator,BatchActivator,FishActivator,PowerShellActivator,PythonActivator
+
+E:\DjangoWorks>env\Scripts\activate
+
+(env) E:\DjangoWorks>pip list
+Package    Version
+---------- -------
+pip        21.2.2
+setuptools 57.4.0
+wheel      0.36.2
+WARNING: You are using pip version 21.2.2; however, version 21.2.3 is available.
+You should consider upgrading via the 'E:\DjangoWorks\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\DjangoWorks>pip install django
+Collecting django
+  Using cached Django-3.2.6-py3-none-any.whl (7.9 MB)
+Collecting asgiref<4,>=3.3.2
+  Using cached asgiref-3.4.1-py3-none-any.whl (25 kB)
+Collecting pytz
+  Using cached pytz-2021.1-py2.py3-none-any.whl (510 kB)
+Collecting sqlparse>=0.2.2
+  Using cached sqlparse-0.4.1-py3-none-any.whl (42 kB)
+Installing collected packages: sqlparse, pytz, asgiref, django
+Successfully installed asgiref-3.4.1 django-3.2.6 pytz-2021.1 sqlparse-0.4.1
+WARNING: You are using pip version 21.2.2; however, version 21.2.3 is available.
+You should consider upgrading via the 'E:\DjangoWorks\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\DjangoWorks>pip list
+Package    Version
+---------- -------
+asgiref    3.4.1
+Django     3.2.6
+pip        21.2.2
+pytz       2021.1
+setuptools 57.4.0
+sqlparse   0.4.1
+wheel      0.36.2
+WARNING: You are using pip version 21.2.2; however, version 21.2.3 is available.
+You should consider upgrading via the 'E:\DjangoWorks\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\DjangoWorks>pip list
+Package    Version
+---------- -------
+asgiref    3.4.1
+Django     3.2.6
+pip        21.2.2
+pytz       2021.1
+setuptools 57.4.0
+sqlparse   0.4.1
+wheel      0.36.2
+WARNING: You are using pip version 21.2.2; however, version 21.2.3 is available.
+You should consider upgrading via the 'E:\DjangoWorks\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\DjangoWorks>django admin startproject project1
+'django' is not recognized as an internal or external command,
+operable program or batch file.
+
+(env) E:\DjangoWorks>pip install django
+Requirement already satisfied: django in e:\djangoworks\env\lib\site-packages (3.2.6)
+Requirement already satisfied: pytz in e:\djangoworks\env\lib\site-packages (from django) (2021.1)
+Requirement already satisfied: asgiref<4,>=3.3.2 in e:\djangoworks\env\lib\site-packages (from django) (3.4.1)
+Requirement already satisfied: sqlparse>=0.2.2 in e:\djangoworks\env\lib\site-packages (from django) (0.4.1)
+WARNING: You are using pip version 21.2.2; however, version 21.2.3 is available.
+You should consider upgrading via the 'E:\DjangoWorks\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\DjangoWorks>pip list
+Package    Version
+---------- -------
+asgiref    3.4.1
+Django     3.2.6
+pip        21.2.2
+pytz       2021.1
+setuptools 57.4.0
+sqlparse   0.4.1
+wheel      0.36.2
+WARNING: You are using pip version 21.2.2; however, version 21.2.3 is available.
+You should consider upgrading via the 'E:\DjangoWorks\env\Scripts\python.exe -m pip install --upgrade pip' command.
+
+(env) E:\DjangoWorks>django-admin startproject project1
+
+(env) E:\DjangoWorks>cd project1
+
+(env) E:\DjangoWorks\project1>dir
+ Volume in drive E is New Volume
+ Volume Serial Number is 522D-2421
+
+ Directory of E:\DjangoWorks\project1
+
+08/09/2021  08:16 PM    <DIR>          .
+08/09/2021  08:16 PM    <DIR>          ..
+08/09/2021  08:16 PM               686 manage.py
+08/09/2021  08:16 PM    <DIR>          project1
+               1 File(s)            686 bytes
+               3 Dir(s)  207,998,754,816 bytes free
+
+(env) E:\DjangoWorks\project1>python manage.py startapp myapp
+
+(env) E:\DjangoWorks\project1>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+August 09, 2021 - 20:37:14
+Django version 3.2.6, using settings 'project1.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[09/Aug/2021 20:38:42] "GET / HTTP/1.1" 200 10697
+[09/Aug/2021 20:38:42] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[09/Aug/2021 20:38:42] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[09/Aug/2021 20:38:42] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[09/Aug/2021 20:38:42] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+Not Found: /favicon.ico
+[09/Aug/2021 20:38:42] "GET /favicon.ico HTTP/1.1" 404 2112

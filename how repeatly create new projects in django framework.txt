@@ -1,0 +1,52 @@
+Microsoft Windows [Version 10.0.19043.1110]
+(c) Microsoft Corporation. All rights reserved.
+
+E:\DjangoWorks>env\Scripts\activate
+
+(env) E:\DjangoWorks>django-admin startproject project2
+
+(env) E:\DjangoWorks>cd project2
+
+(env) E:\DjangoWorks\project2>python manage.py startapp myapp
+
+(env) E:\DjangoWorks\project2>tree
+Folder PATH listing for volume New Volume
+Volume serial number is 522D-2421
+E:.
+├───myapp
+│   └───migrations
+└───project2
+    └───__pycache__
+
+(env) E:\DjangoWorks\project2>tree /F
+Folder PATH listing for volume New Volume
+Volume serial number is 522D-2421
+E:.
+│   manage.py
+│
+├───myapp
+│   │   admin.py
+│   │   apps.py
+│   │   models.py
+│   │   tests.py
+│   │   views.py
+│   │   __init__.py
+│   │
+│   └───migrations
+│           __init__.py
+│
+└───project2
+    │   asgi.py
+    │   settings.py
+    │   urls.py
+    │   wsgi.py
+    │   __init__.py
+    │
+    └───__pycache__
+            settings.cpython-39.pyc
+            __init__.cpython-39.pyc
+
+
+(env) E:\DjangoWorks\project2>code .
+
+(env) E:\DjangoWorks\project2>

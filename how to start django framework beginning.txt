@@ -1,0 +1,35 @@
+python -m django --version
+
+env\Scripts\activate
+
+python -V
+
+virtualenv env 
+
+env\Scripts\activate
+
+pip list 
+
+pip install django 
+
+django-admin startproject project1
+
+cd project1  # cd - change direction of the folder
+
+python manage.py startapp myapp
+
+tree
+
+tree /F
+
+python manage.py runserver
+
+127.0.0.1:8000
+
+# terminal 
+
+python manage.py runserver
+
+python manage.py migrate
+
+ctrl+C(Quit the server with CTRL-BREAK.) - create another location in terminal
